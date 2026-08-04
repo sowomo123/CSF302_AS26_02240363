@@ -12,6 +12,6 @@ Therefore, for large sorted datasets, Binary Search provides significantly bette
 
 ## out put
 
-![image](question_1.png)
+![image](./public/question_1.png)
 
 ..
