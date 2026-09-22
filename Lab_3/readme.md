@@ -78,18 +78,22 @@ This option allows searching for a specific key in the sorted array using binary
 
 ### Choice 4 Search for a key using Ternary Search
 ![Karatsuba 2](images/c4.png)
+
 This option performs a search using ternary search algorithm, which divides the array into three parts using two midpoints. It compares the key with elements at both midpoints and narrows down the search to one-third of the original space. The output displays the search result and the total number of comparisons performed.
 
 ### Choice 5  Step/frequency count for BEST case
 ![Karatsuba 2](images/c5.png)
+
 This option analyzes the best-case scenario where the key is found on the first comparison. For binary search, this occurs when the key is at the middle element. For ternary search, it happens when the key matches one of the two midpoints. The comparison counts demonstrate the minimum number of steps required by each algorithm.
 
 ### Choice 6  Step/frequency count for WORST case
 ![Karatsuba 2](images/c6.png)
+
 This option evaluates the worst-case scenario where the key is not present in the array, forcing the algorithm to search through all possible partitions. The comparison counts show the maximum number of steps each algorithm requires, highlighting the efficiency difference between binary and ternary search.
 
 ### Choice 7  Step/frequency count comparison table across increasing n
 ![Karatsuba 2](images/c7.png)
+
 This option generates a comparison table showing the worst-case comparison counts for both algorithms across increasing array sizes (10 to 1,000,000 elements). The table demonstrates that binary search consistently performs fewer comparisons than ternary search, despite ternary search dividing the array into three parts, because it requires two comparisons per level versus one for binary search.
 
 
