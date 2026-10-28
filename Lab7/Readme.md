@@ -14,6 +14,8 @@ This lab explores greedy algorithms (activity selection, knapsack), Huffman codi
 
 #### Demonstration
 
+![Activity Selection](images/1.png)
+
 **Activities:** [(1,4), (3,5), (0,6), (5,7), (3,9), (5,9), (6,10), (8,11), (8,12), (2,14), (12,16)]
 
 **Results:**
@@ -22,6 +24,8 @@ This lab explores greedy algorithms (activity selection, knapsack), Huffman codi
 - **Shortest duration:** 4 activities - (3,5), (5,7), (8,11), (12,16)
 
 #### Counterexamples
+
+![Counterexamples](images/1.1.png)
 
 Found inputs where suboptimal rules give smaller answers:
 
@@ -35,6 +39,8 @@ Found inputs where suboptimal rules give smaller answers:
 - Shortest duration: 2 activities
 
 ### Knapsack
+
+![Knapsack Comparison](images/2.png)
 
 #### Fractional Knapsack
 
@@ -140,6 +146,8 @@ Using value/weight ratio (optimal for fractional case):
 
 ### Timing Comparison (V=1000)
 
+![MST Timing Comparison](images/3.png)
+
 **Sparse graph (E ≈ 3V):**
 - Kruskal: ~X ms
 - Prim: ~Y ms
@@ -155,6 +163,8 @@ Using value/weight ratio (optimal for fractional case):
 - Dense: Prim wins because it processes O(V) edges vs Kruskal sorting O(V²) edges
 
 ### Negative Edge Issue
+
+![Dijkstra Negative Edge Failure](images/4.png)
 
 **Graph with negative edge where Dijkstra fails:**
 - 0→1(1), 0→2(4), 1→2(-3), 2→3(2)
