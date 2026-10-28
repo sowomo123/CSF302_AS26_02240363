@@ -32,6 +32,8 @@ Given a rod of length n and a price table for different lengths, find the maximu
 
 #### Part 2: Recursive Calls and Execution Time
 
+![Rod Cutting Recursive Calls Comparison](image/q1.png)
+
 | n | Naive Calls | Naive Time (ms) | Memo Calls | Memo Time (ms) | Bottom-up Time (ms) |
 |---|-------------|-----------------|------------|----------------|---------------------|
 | 5 | 32 | 0.031 | 16 | 0.013 | 0.006 |
@@ -65,6 +67,9 @@ Given dimensions of matrices, find the optimal parenthesization to minimize scal
 All tests passed ✓
 
 #### Test 1: <30, 35, 15, 5, 10, 20, 25>
+
+![Matrix Chain Test 1](image/2.1.png)
+
 - **Optimal cost:** 15,125
 - **Expected:** 15,125 ✓
 - **Optimal parenthesization:** ((A1(A2A3))((A4A5)A6))
@@ -72,6 +77,9 @@ All tests passed ✓
 - **Speedup:** 2.68x
 
 #### Test 2: <5, 4, 6, 2, 7>
+
+![Matrix Chain Test 2](image/2.2.png)
+
 - **Optimal cost:** 158
 - **Optimal parenthesization:** ((A1(A2A3))A4)
 - **Left-to-right cost:** 250
@@ -103,6 +111,8 @@ Find the longest subsequence common to two strings.
 
 #### LCS Table for X = ABCBDAB, Y = BDCABA
 
+![LCS Table](image/3.1.png)
+
 ```
     B D C A B A
    0  0  0  0  0  0  0
@@ -121,6 +131,8 @@ B  0  1  2  2  3  4  4
 
 #### Timing Comparison (Lengths 5-18)
 
+![LCS Timing Comparison](image/3.2.png)
+
 | Length | DP Time (ms) | Brute Time (ms) | Speedup |
 |--------|--------------|-----------------|---------|
 | 5 | 0.012 | 0.073 | 6.19x |
@@ -129,6 +141,9 @@ B  0  1  2  2  3  4  4
 | 18 | 0.052 | 546.639 | 10,492.10x |
 
 #### Line-by-Line Diff
+
+![Line-by-Line Diff](image/3.png)
+
 Successfully implemented using LCS to show unchanged, added, and removed lines.
 
 ### Key Findings
@@ -146,6 +161,8 @@ Successfully implemented using LCS to show unchanged, added, and removed lines.
 Given keys with search probabilities, construct BST with minimum expected search cost.
 
 ### Results
+
+![Optimal BST Structure](image/4.png)
 
 **Input:**
 - p (successful): [0.15, 0.10, 0.05, 0.10, 0.20]
